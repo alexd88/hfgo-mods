@@ -1,6 +1,13 @@
 package calendar
 
-import "errors"
+import (
+	"errors"
+	"fmt"
+)
+
+func init() {
+	fmt.Println("Init function of 'calendar' package")
+}
 
 type Date struct {
 	day   int
